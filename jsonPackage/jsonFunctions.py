@@ -3,7 +3,7 @@
 # Assignment Title: Final Project
 # Course: IS 4010
 # Semester/Year: Spring 2023
-# Brief Description: This is a module where we will store all of our functions that will be called to in the main
+# Brief Description: This is a module where we will store all of our decryption for the json files & the text file
 # Citations: N/A
 # Anything else that's relevant: This is our final! 
 # function.py
@@ -12,7 +12,7 @@ import json
 
 def decryptJson():
     '''
-    Get our teams key and value pairs that come with it
+    Get our teams key and value pairs that come with it -MW
     @param: none
     @return: the data associated within our 'Williams' key 
     ''' 
@@ -23,7 +23,7 @@ def decryptJson():
 
 def decryptTextFile(teamData):
     '''
-    Decrypts english-2.txt by extracting words based on line numbers provided in teamData.
+    Decrypts english-2.txt by extracting words based on line numbers provided in teamData. -MW
     @param: teamData
     @return: a decrypted string that provides a location where we will take our group picture 
     ''' 
@@ -33,10 +33,18 @@ def decryptTextFile(teamData):
     decryptedStr = ' '.join(english_txt[int(num)].strip() for num in teamData)
     return decryptedStr
 
-# Need a function to decrypt (TeamsAndEncryptedMessagesForDistribution) AES messages
 
-
-# Need a function that will load our image 
+def decryptAESjson():
+    '''
+    Get our teams AES key and value pairs that come with it -MW
+    @param: none
+    @return: the data associated within our 'Williams' key 
+    ''' 
+    # Read the encrypted JSON file
+    with open('TeamsAndEncryptedMessagesForDistribution.json') as x:
+        AESWilliams = json.load(x)['Williams']
+        print(AESWilliams)
+    return AESWilliams
 
 
 

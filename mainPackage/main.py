@@ -3,17 +3,27 @@
 # Assignment Title: Final Project
 # Course: IS 4010
 # Semester/Year: Spring 2023
-# Brief Description:  
+# Brief Description: This is us being Python experts to solve a scavenger hunt  
 # Citations: N/A
-# Anything else that's relevant: This is our final! 
+# Anything else that's relevant: 
 # main.py
-from functionPackage.function import *
-import json
+from jsonPackage.jsonFunctions import *
+from aesPackage.aesDecrypt import *
+from picturePackage.picture import *
+
 
 if __name__ == '__main__':
     location = decryptTextFile(decryptJson())
     print(location)
-    #test()
+    print(decrypted_message)
+    loadImage()
+    
+    
+        
+
+    
+    
+    
 
         
 
