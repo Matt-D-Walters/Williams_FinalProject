@@ -3,7 +3,7 @@
 # Assignment Title: Final Project
 # Course: IS 4010
 # Semester/Year: Spring 2023
-# Brief Description: This is a module where we will store all of our decryption for the json files & the text file
+# Brief Description: This is a module where we will use Fernet to decrypt a message using a shared key
 # Citations: N/A
 # Anything else that's relevant: This is our final! 
 #aesDecrypt.py
