@@ -17,10 +17,8 @@ So someone should figure out a way to call that for the cipher instead of manual
 #===============================================================================
 
 
-
-
 from cryptography.fernet import Fernet
-from jsonFunctions import decryptAESjson  # This import the decryptAESjson function
+from jsonPackage.jsonFunctions import decryptAESjson  # This import the decryptAESjson function
 
 # Add function documentation
 
@@ -36,4 +34,3 @@ key = 'BQrousuHvfUBm2r6pJ4Q7od6IwoTVyHhnvgOEX3myl8='
         
 decrypted_message = decrypt_message(cipher, key)
 print(decrypted_message)
-
