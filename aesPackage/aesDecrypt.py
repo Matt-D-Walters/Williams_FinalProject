@@ -20,6 +20,7 @@ So someone should figure out a way to call that for the cipher instead of manual
 
 
 from cryptography.fernet import Fernet
+from jsonFunctions import decryptAESjson  # This import the decryptAESjson function
 
 # Add function documentation
 
@@ -28,9 +29,11 @@ def decrypt_message(cipher, key):
     decrypt = x.decrypt(cipher.encode()).decode()
     
     return decrypt
-cipher = 'gAAAAABlTNM6TGjW5Tsw2sZviokTYGpyIdV0Fet4EaopCXrk5DRnFGjYqqtVXfqx7h6OjBFeWNIkn0fvVnBETa3CkoZpR5NDLQ==' 
+
+cipher = decryptAESjson("Williams")
 key = 'BQrousuHvfUBm2r6pJ4Q7od6IwoTVyHhnvgOEX3myl8='  
         
         
 decrypted_message = decrypt_message(cipher, key)
-        
+print(decrypted_message)
+
