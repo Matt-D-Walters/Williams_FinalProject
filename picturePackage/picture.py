@@ -1,7 +1,11 @@
-#===============================================================================
-'''Someone add our documentation''' 
-#===============================================================================
-
+# Name: Matthew Walters, Deborah Tekle, Emma Wilson, Sam Moushey
+# Email: waltemw@mail.uc.edu, tekledh@mail.uc.edu, wilso2ek@mail.uc.edu, moushesb@mail.uc.edu
+# Assignment Title: Final Project
+# Course: IS 4010
+# Semester/Year: Spring 2023
+# Brief Description: This is a module where we will store all of our decryption for the json files & the text file
+# Citations: N/A
+# Anything else that's relevant: This is our final! 
 #picture.py
 
 from PIL import Image
