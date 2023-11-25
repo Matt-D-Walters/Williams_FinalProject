@@ -11,12 +11,20 @@ from jsonPackage.jsonFunctions import *
 from aesPackage.aesDecrypt import *
 from picturePackage.picture import *
 
+#===============================================================================
+'''Someone add some comments for our code''' 
+#===============================================================================
 
 if __name__ == '__main__':
     location = decryptTextFile(decryptJson())
-    print(location)
-    print(decrypted_message)
+    print('Location of our picture: '+ location)
     loadImage()
+    
+    key = 'BQrousuHvfUBm2r6pJ4Q7od6IwoTVyHhnvgOEX3myl8='
+    cipher = str(decryptAESjson())
+    decrypted_message = decrypt_message(cipher, key)
+    print('Our movie is: ' + decrypted_message)
+    
     
     
         

@@ -43,7 +43,6 @@ def decryptAESjson():
     # Read the encrypted JSON file
     with open('TeamsAndEncryptedMessagesForDistribution.json') as x:
         AESWilliams = json.load(x)['Williams']
-        print(AESWilliams)
     return AESWilliams
 
 
