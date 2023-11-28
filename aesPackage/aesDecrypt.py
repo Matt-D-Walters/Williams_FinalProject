@@ -13,8 +13,13 @@ from cryptography.fernet import Fernet
 from jsonPackage.jsonFunctions import *  # This import the decryptAESjson function
 
 
-# Decrypts a message using the provided cipher and key
 def decrypt_message(cipher, key):
+    '''
+    This function uses the Fernet module to decrypt our AES string.
+    @param: Our team's AES cipher
+    @param: Our team's decryption key
+    @return: The movie title 
+    ''' 
     # Create a Fernet object with the provided key
     x = Fernet(key)
     #Decrypt the cipher (which is expected to be a string), encode the result, and then decode it to a string

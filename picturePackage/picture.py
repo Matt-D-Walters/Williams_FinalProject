@@ -11,8 +11,13 @@
 from PIL import Image
 
 
-#This function loads the image and prints it to the main
+
 def loadImage():
+    '''
+    This function loads the image and prints it to the main
+    @param: none
+    @return: Our team's image.
+    '''
     try:
         # Open the image file using the Pillow library
         with Image.open('WilliamsGroupPicture.jpeg') as img:
