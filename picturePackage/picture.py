@@ -11,16 +11,16 @@
 from PIL import Image
 
 
-#===============================================================================
-'''Someone add the correct documentation for a function''' 
-#===============================================================================
-
-
+#This function loads the image and prints it to the main
 def loadImage():
     try:
+        # Open the image file using the Pillow library
         with Image.open('WilliamsGroupPicture.jpeg') as img:
+            # Display the image
             picture = img.show()
+            #Returning the show() result
             return picture         
     except FileNotFoundError:
+         # Handle the case where the image file is not found
         print('Image not found')
 

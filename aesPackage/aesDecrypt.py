@@ -12,13 +12,13 @@
 from cryptography.fernet import Fernet
 from jsonPackage.jsonFunctions import *  # This import the decryptAESjson function
 
-#===============================================================================
-''' Add function documentation'''
-#===============================================================================
 
+# Decrypts a message using the provided cipher and key
 def decrypt_message(cipher, key):
+    # Create a Fernet object with the provided key
     x = Fernet(key)
+    #Decrypt the cipher (which is expected to be a string), encode the result, and then decode it to a string
     decrypt = x.decrypt(cipher.encode()).decode()
-    
+    # Returns the decrypted message
     return decrypt
 
