@@ -22,7 +22,6 @@ def decryptJson():
     return teamData
 
 def stripTextFile(teamData):
-    #stripTextFile
     '''
     strips english-2.txt by extracting words based on line numbers provided in teamData. -MW
     @param: teamData
@@ -36,7 +35,6 @@ def stripTextFile(teamData):
 
 
 def getAESString():
-    #decryptAESjson
     '''
     Get our teams AES string from the TeamsAndEncryptedMessagesForDistribution 
     @param: none

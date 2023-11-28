@@ -14,7 +14,7 @@ from PIL import Image
 
 def loadImage():
     '''
-    This function loads the image and prints it to the main
+    This function uses the PIL to import a display our image 
     @param: none
     @return: Our team's image.
     '''
@@ -26,6 +26,6 @@ def loadImage():
             #Returning the show() result
             return picture         
     except FileNotFoundError:
-         # Handle the case where the image file is not found
+        # Handle the case where the image file is not found
         print('Image not found')
 
