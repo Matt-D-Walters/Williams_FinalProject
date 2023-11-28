@@ -10,6 +10,7 @@
 from jsonPackage.jsonFunctions import *
 from aesPackage.aesDecrypt import *
 from picturePackage.picture import *
+from stripPackage.strip import *
 
 
 if __name__ == '__main__':
