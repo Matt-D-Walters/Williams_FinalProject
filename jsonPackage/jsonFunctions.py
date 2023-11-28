@@ -12,33 +12,35 @@ import json
 
 def decryptJson():
     '''
-    Get our teams key and value pairs that come with it -MW
+    Get our teams key and value pairs that come with it from EncryptedGroupHint Fall 2023 json -MW
     @param: none
-    @return: the data associated within our 'Williams' key 
+    @return: the values associated within our 'Williams' key 
     ''' 
     # Read the encrypted JSON file
     with open('EncryptedGroupHints Fall 2023 Section 001.json') as x:
         teamData = json.load(x)['Williams']
     return teamData
 
-def decryptTextFile(teamData):
+def stripTextFile(teamData):
+    #stripTextFile
     '''
-    Decrypts english-2.txt by extracting words based on line numbers provided in teamData. -MW
+    strips english-2.txt by extracting words based on line numbers provided in teamData. -MW
     @param: teamData
     @return: a decrypted string that provides a location where we will take our group picture 
     ''' 
     with open('english-2.txt') as x:
         english_txt = x.read().split() 
     #strip the line numbers that are in teamData by indicies then return our words that are in our teamData list - MW
-    decryptedStr = ' '.join(english_txt[int(num)].strip() for num in teamData)
-    return decryptedStr
+    stripedStr = ' '.join(english_txt[int(num)].strip() for num in teamData)
+    return stripedStr
 
 
-def decryptAESjson():
+def getAESString():
+    #decryptAESjson
     '''
-    Get our teams AES key and value pairs that come with it -MW
+    Get our teams AES string from the TeamsAndEncryptedMessagesForDistribution 
     @param: none
-    @return: the data associated within our 'Williams' key 
+    @return: the data associated within our 'Williams' dictionary key 
     ''' 
     # Read the encrypted JSON file
     with open('TeamsAndEncryptedMessagesForDistribution.json') as x:

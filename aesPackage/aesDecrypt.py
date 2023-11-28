@@ -10,7 +10,7 @@
 
 
 from cryptography.fernet import Fernet
-from jsonPackage.jsonFunctions import decryptAESjson  # This import the decryptAESjson function
+from jsonPackage.jsonFunctions import *  # This import the decryptAESjson function
 
 #===============================================================================
 ''' Add function documentation'''

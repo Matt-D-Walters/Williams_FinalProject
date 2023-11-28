@@ -16,15 +16,19 @@ from picturePackage.picture import *
 #===============================================================================
 
 if __name__ == '__main__':
-    location = decryptTextFile(decryptJson())
+    location = stripTextFile(decryptJson())
     print('Location of our picture: '+ location)
-    loadImage()
+    
+    
     
     key = 'BQrousuHvfUBm2r6pJ4Q7od6IwoTVyHhnvgOEX3myl8='
-    cipher = str(decryptAESjson())
+    cipher = str(getAESString())
     decrypted_message = decrypt_message(cipher, key)
     print('Our movie is: ' + decrypted_message)
     
+    
+    
+    loadImage()
     
     
         
